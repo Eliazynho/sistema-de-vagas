@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>VAGAS DE EMPREGO</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>SISTEMA DE <br>VAGAS DE <br>EMPREGOS</h1>
-        <div class="buttons">        
-            <button onclick="vagasDisponiveis()">VAGAS DISPONIVEIS</button>
-            <button onclick="">CRIAR NOVA VAGA</button>
-                <div class="search">
-                    <input type="text" name="search" id="search" placeholder="EX: Desenvolvedor">
-                    <button onclick="buscarVaga()">BUSCAR VAGA</button>
-                </div>
-                <div id="vagas"></div>
-                <div class="search">
-                    <input type="text" name="id" id="id" placeholder="INFORME O ID">
-                    <button onclick="inscreverVaga()">INSCREVA-SE</button>
-                </div>
-                <div class="search">
-                    <input type="text" name="excluir" id="excluir" placeholder="INFORME O ID">
-                    <button onclick="excluirVaga()">EXCLUIR</button>
-                </div>
-            
-
+      <h1>SISTEMA DE <br />VAGAS DE <br />EMPREGOS</h1>
+      <div class="buttons">
+        <button onclick="vagasDisponiveis()">VAGAS DISPONIVEIS</button>
+        <button onclick="criarNovaVaga()">CRIAR NOVA VAGA</button>
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="EX: Desenvolvedor"
+          />
+          <button onclick="buscarVaga()">BUSCAR VAGA</button>
         </div>
-
+        <div id="vagas"></div>
+        <div class="search">
+          <input type="text" name="id" id="id" placeholder="INFORME O ID" />
+          <button onclick="inscreverVaga()">INSCREVA-SE</button>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            name="excluir"
+            id="excluir"
+            placeholder="INFORME O ID"
+          />
+          <button onclick="excluirVaga()">EXCLUIR</button>
+        </div>
+      </div>
+      <br>
+      <footer>Desenvolvido por: <a href="https://github.com/Eliazynho">ELIAS.DEV</a></footer>
     </div>
-    
-
-
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
