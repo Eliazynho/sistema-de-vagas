@@ -11,14 +11,21 @@
         <h1>SISTEMA DE <br>VAGAS DE <br>EMPREGOS</h1>
         <div class="buttons">        
             <button onclick="vagasDisponiveis()">VAGAS DISPONIVEIS</button>
-            <button>CRIAR NOVA VAGA</button>
+            <button onclick="">CRIAR NOVA VAGA</button>
                 <div class="search">
                     <input type="text" name="search" id="search" placeholder="EX: Desenvolvedor">
-                    <button>BUSCAR VAGA</button>
+                    <button onclick="buscarVaga()">BUSCAR VAGA</button>
                 </div>
                 <div id="vagas"></div>
-            <button>INSCREVA-SE</button>
-            <button>EXCLUIR</button>
+                <div class="search">
+                    <input type="text" name="id" id="id" placeholder="INFORME O ID">
+                    <button onclick="inscreverVaga()">INSCREVA-SE</button>
+                </div>
+                <div class="search">
+                    <input type="text" name="excluir" id="excluir" placeholder="INFORME O ID">
+                    <button onclick="excluirVaga()">EXCLUIR</button>
+                </div>
+            
 
         </div>
 
